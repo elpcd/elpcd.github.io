@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <base href="/">
+
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Ferramenta para criação de PCDs e TTDs">
+  <meta name="description" content="Elaborador de Planos de Classificação de Documentos">
 
   <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="ElPCD">
+  <meta name="apple-mobile-web-app-title" content="El PCD">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
@@ -19,24 +21,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Show Loading animation while the app is building -->
-  <div id="wrapper">
-    <div class="loading-dots">
-      <div class="bounce"></div>
-      <div class="bounce2"></div>
-      <div class="bounce3"></div>
-    </div>
+  <div class="elpcd-splash-animation" id="elpcd-splash-animation">
+    <svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+      <rect x="72" y="52" width="112" height="24" rx="8"/>
+      <rect x="72" y="84" width="48" height="24" rx="8"/>
+      <rect x="88" y="116" width="96" height="24" rx="8"/>
+      <rect x="72" y="148" width="48" height="24" rx="8"/>
+      <rect x="72" y="180" width="112" height="24" rx="8"/>
+    </svg>
   </div>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=3349342396');
-      });
-    }
-  </script>
-  <script src="main.dart.js" type="application/javascript"></script>
+
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

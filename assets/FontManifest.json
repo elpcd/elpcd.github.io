@@ -1,1 +1,1 @@
-[{"family":"MaterialIcons","fonts":[{"asset":"fonts/MaterialIcons-Regular.otf"}]}]
+[{"family":"MaterialIcons","fonts":[{"asset":"fonts/MaterialIcons-Regular.otf"}]},{"family":"Inter","fonts":[{"asset":"assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf"},{"style":"italic","asset":"assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf"}]},{"family":"packages/lucide_icons_flutter/Lucide","fonts":[{"asset":"packages/lucide_icons_flutter/assets/lucide.ttf"}]}]
